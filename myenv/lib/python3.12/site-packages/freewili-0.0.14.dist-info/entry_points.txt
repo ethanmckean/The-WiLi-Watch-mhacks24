@@ -1,0 +1,4 @@
+[console_scripts]
+fwi-convert=freewili.cli:convert
+fwi-serial=freewili.cli:main
+

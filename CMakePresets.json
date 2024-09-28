@@ -1,0 +1,24 @@
+{
+    "version": 3,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 16,
+        "patch": 0
+    },
+    "configurePresets": [
+        {
+            "name": "default",
+            "hidden": true,
+            "generator": "Ninja"
+        },
+        {
+            "name": "wasi",
+            "description": "Configure for WASI using wasi-sdk",
+            "inherits": "default",
+            "toolchainFile": "/opt/wasi-sdk/share/cmake/wasi-sdk.cmake",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release"
+            }
+        }
+    ]
+}

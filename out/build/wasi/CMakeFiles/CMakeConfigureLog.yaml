@@ -1,0 +1,304 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:228 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The target system is: WASI - 1 - wasm32
+      The host system is: Linux - 5.15.153.1-microsoft-standard-WSL2 - x86_64
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /opt/wasi-sdk/share/cmake/../..//bin/clang 
+      Build flags: 
+      Id flags: -c;--target=wasm32-wasi 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+      
+      The C compiler identification is Clang, found in:
+        /home/austynan/mhacks24/out/build/wasi/CMakeFiles/3.28.3/CompilerIdC/CMakeCCompilerId.o
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /opt/wasi-sdk/share/cmake/../..//bin/clang++ 
+      Build flags: 
+      Id flags: -c;--target=wasm32-wasi 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+      
+      The CXX compiler identification is Clang, found in:
+        /home/austynan/mhacks24/out/build/wasi/CMakeFiles/3.28.3/CompilerIdCXX/CMakeCXXCompilerId.o
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/austynan/mhacks24/out/build/wasi/CMakeFiles/CMakeScratch/TryCompile-sntTxx"
+      binary: "/home/austynan/mhacks24/out/build/wasi/CMakeFiles/CMakeScratch/TryCompile-sntTxx"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_COMPILER_TARGET: "wasm32-wasi"
+      CMAKE_C_COMPILER_TARGET: "wasm32-wasi"
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/opt/wasi-sdk/share/cmake"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/austynan/mhacks24/out/build/wasi/CMakeFiles/CMakeScratch/TryCompile-sntTxx'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_1ac57
+        [1/2] /opt/wasi-sdk/share/cmake/../..//bin/clang --target=wasm32-wasi   -v -MD -MT CMakeFiles/cmTC_1ac57.dir/CMakeCCompilerABI.c.obj -MF CMakeFiles/cmTC_1ac57.dir/CMakeCCompilerABI.c.obj.d -o CMakeFiles/cmTC_1ac57.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        clang version 18.1.2-wasi-sdk (https://github.com/llvm/llvm-project 26a1d6601d727a96f4301d0d8647b5a42760ae0c)
+        Target: wasm32-unknown-wasi
+        Thread model: posix
+        InstalledDir: /opt/wasi-sdk/share/cmake/../..//bin
+         (in-process)
+         "/opt/wasi-sdk/bin/clang-18" -cc1 -triple wasm32-unknown-wasi -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model static -mframe-pointer=none -ffp-contract=on -fno-rounding-math -mconstructor-aliases -target-cpu generic -fvisibility=hidden -debugger-tuning=gdb -fdebug-compilation-dir=/home/austynan/mhacks24/out/build/wasi/CMakeFiles/CMakeScratch/TryCompile-sntTxx -v -fcoverage-compilation-dir=/home/austynan/mhacks24/out/build/wasi/CMakeFiles/CMakeScratch/TryCompile-sntTxx -resource-dir /opt/wasi-sdk/lib/clang/18 -dependency-file CMakeFiles/cmTC_1ac57.dir/CMakeCCompilerABI.c.obj.d -MT CMakeFiles/cmTC_1ac57.dir/CMakeCCompilerABI.c.obj -sys-header-deps -isysroot /opt/wasi-sdk/bin/../share/wasi-sysroot -internal-isystem /opt/wasi-sdk/lib/clang/18/include -internal-isystem /opt/wasi-sdk/bin/../share/wasi-sysroot/include/wasm32-wasi -internal-isystem /opt/wasi-sdk/bin/../share/wasi-sysroot/include -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -o CMakeFiles/cmTC_1ac57.dir/CMakeCCompilerABI.c.obj -x c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 18.1.2-wasi-sdk based upon LLVM 18.1.2-wasi-sdk default target wasm32-wasi
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /opt/wasi-sdk/lib/clang/18/include
+         /opt/wasi-sdk/bin/../share/wasi-sysroot/include/wasm32-wasi
+         /opt/wasi-sdk/bin/../share/wasi-sysroot/include
+        End of search list.
+        [2/2] : && /opt/wasi-sdk/share/cmake/../..//bin/clang --target=wasm32-wasi  -v CMakeFiles/cmTC_1ac57.dir/CMakeCCompilerABI.c.obj -o cmTC_1ac57   && :
+        clang version 18.1.2-wasi-sdk (https://github.com/llvm/llvm-project 26a1d6601d727a96f4301d0d8647b5a42760ae0c)
+        Target: wasm32-unknown-wasi
+        Thread model: posix
+        InstalledDir: /opt/wasi-sdk/share/cmake/../..//bin
+         "/opt/wasi-sdk/share/cmake/../..//bin/wasm-ld" -m wasm32 -L/opt/wasi-sdk/bin/../share/wasi-sysroot/lib/wasm32-wasi /opt/wasi-sdk/bin/../share/wasi-sysroot/lib/wasm32-wasi/crt1-command.o CMakeFiles/cmTC_1ac57.dir/CMakeCCompilerABI.c.obj -lc /opt/wasi-sdk/lib/clang/18/lib/wasi/libclang_rt.builtins-wasm32.a -o cmTC_1ac57
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/opt/wasi-sdk/lib/clang/18/include]
+          add: [/opt/wasi-sdk/bin/../share/wasi-sysroot/include/wasm32-wasi]
+          add: [/opt/wasi-sdk/bin/../share/wasi-sysroot/include]
+        end of search list found
+        collapse include dir [/opt/wasi-sdk/lib/clang/18/include] ==> [/opt/wasi-sdk/lib/clang/18/include]
+        collapse include dir [/opt/wasi-sdk/bin/../share/wasi-sysroot/include/wasm32-wasi] ==> [/opt/wasi-sdk/share/wasi-sysroot/include/wasm32-wasi]
+        collapse include dir [/opt/wasi-sdk/bin/../share/wasi-sysroot/include] ==> [/opt/wasi-sdk/share/wasi-sysroot/include]
+        implicit include dirs: [/opt/wasi-sdk/lib/clang/18/include;/opt/wasi-sdk/share/wasi-sysroot/include/wasm32-wasi;/opt/wasi-sdk/share/wasi-sysroot/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld\\.lld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/austynan/mhacks24/out/build/wasi/CMakeFiles/CMakeScratch/TryCompile-sntTxx']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/ninja -v cmTC_1ac57]
+        ignore line: [[1/2] /opt/wasi-sdk/share/cmake/../..//bin/clang --target=wasm32-wasi   -v -MD -MT CMakeFiles/cmTC_1ac57.dir/CMakeCCompilerABI.c.obj -MF CMakeFiles/cmTC_1ac57.dir/CMakeCCompilerABI.c.obj.d -o CMakeFiles/cmTC_1ac57.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang version 18.1.2-wasi-sdk (https://github.com/llvm/llvm-project 26a1d6601d727a96f4301d0d8647b5a42760ae0c)]
+        ignore line: [Target: wasm32-unknown-wasi]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /opt/wasi-sdk/share/cmake/../..//bin]
+        ignore line: [ (in-process)]
+        ignore line: [ "/opt/wasi-sdk/bin/clang-18" -cc1 -triple wasm32-unknown-wasi -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model static -mframe-pointer=none -ffp-contract=on -fno-rounding-math -mconstructor-aliases -target-cpu generic -fvisibility=hidden -debugger-tuning=gdb -fdebug-compilation-dir=/home/austynan/mhacks24/out/build/wasi/CMakeFiles/CMakeScratch/TryCompile-sntTxx -v -fcoverage-compilation-dir=/home/austynan/mhacks24/out/build/wasi/CMakeFiles/CMakeScratch/TryCompile-sntTxx -resource-dir /opt/wasi-sdk/lib/clang/18 -dependency-file CMakeFiles/cmTC_1ac57.dir/CMakeCCompilerABI.c.obj.d -MT CMakeFiles/cmTC_1ac57.dir/CMakeCCompilerABI.c.obj -sys-header-deps -isysroot /opt/wasi-sdk/bin/../share/wasi-sysroot -internal-isystem /opt/wasi-sdk/lib/clang/18/include -internal-isystem /opt/wasi-sdk/bin/../share/wasi-sysroot/include/wasm32-wasi -internal-isystem /opt/wasi-sdk/bin/../share/wasi-sysroot/include -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -o CMakeFiles/cmTC_1ac57.dir/CMakeCCompilerABI.c.obj -x c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 18.1.2-wasi-sdk based upon LLVM 18.1.2-wasi-sdk default target wasm32-wasi]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /opt/wasi-sdk/lib/clang/18/include]
+        ignore line: [ /opt/wasi-sdk/bin/../share/wasi-sysroot/include/wasm32-wasi]
+        ignore line: [ /opt/wasi-sdk/bin/../share/wasi-sysroot/include]
+        ignore line: [End of search list.]
+        ignore line: [[2/2] : && /opt/wasi-sdk/share/cmake/../..//bin/clang --target=wasm32-wasi  -v CMakeFiles/cmTC_1ac57.dir/CMakeCCompilerABI.c.obj -o cmTC_1ac57   && :]
+        ignore line: [clang version 18.1.2-wasi-sdk (https://github.com/llvm/llvm-project 26a1d6601d727a96f4301d0d8647b5a42760ae0c)]
+        ignore line: [Target: wasm32-unknown-wasi]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /opt/wasi-sdk/share/cmake/../..//bin]
+        link line: [ "/opt/wasi-sdk/share/cmake/../..//bin/wasm-ld" -m wasm32 -L/opt/wasi-sdk/bin/../share/wasi-sysroot/lib/wasm32-wasi /opt/wasi-sdk/bin/../share/wasi-sysroot/lib/wasm32-wasi/crt1-command.o CMakeFiles/cmTC_1ac57.dir/CMakeCCompilerABI.c.obj -lc /opt/wasi-sdk/lib/clang/18/lib/wasi/libclang_rt.builtins-wasm32.a -o cmTC_1ac57]
+          arg [/opt/wasi-sdk/share/cmake/../..//bin/wasm-ld] ==> ignore
+          arg [-m] ==> ignore
+          arg [wasm32] ==> ignore
+          arg [-L/opt/wasi-sdk/bin/../share/wasi-sysroot/lib/wasm32-wasi] ==> dir [/opt/wasi-sdk/bin/../share/wasi-sysroot/lib/wasm32-wasi]
+          arg [/opt/wasi-sdk/bin/../share/wasi-sysroot/lib/wasm32-wasi/crt1-command.o] ==> obj [/opt/wasi-sdk/bin/../share/wasi-sysroot/lib/wasm32-wasi/crt1-command.o]
+          arg [CMakeFiles/cmTC_1ac57.dir/CMakeCCompilerABI.c.obj] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [/opt/wasi-sdk/lib/clang/18/lib/wasi/libclang_rt.builtins-wasm32.a] ==> lib [/opt/wasi-sdk/lib/clang/18/lib/wasi/libclang_rt.builtins-wasm32.a]
+          arg [-o] ==> ignore
+          arg [cmTC_1ac57] ==> ignore
+        remove lib [/opt/wasi-sdk/lib/clang/18/lib/wasi/libclang_rt.builtins-wasm32.a]
+        collapse obj [/opt/wasi-sdk/bin/../share/wasi-sysroot/lib/wasm32-wasi/crt1-command.o] ==> [/opt/wasi-sdk/share/wasi-sysroot/lib/wasm32-wasi/crt1-command.o]
+        collapse library dir [/opt/wasi-sdk/bin/../share/wasi-sysroot/lib/wasm32-wasi] ==> [/opt/wasi-sdk/share/wasi-sysroot/lib/wasm32-wasi]
+        implicit libs: [c]
+        implicit objs: [/opt/wasi-sdk/share/wasi-sysroot/lib/wasm32-wasi/crt1-command.o]
+        implicit dirs: [/opt/wasi-sdk/share/wasi-sysroot/lib/wasm32-wasi]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/austynan/mhacks24/out/build/wasi/CMakeFiles/CMakeScratch/TryCompile-QyYq72"
+      binary: "/home/austynan/mhacks24/out/build/wasi/CMakeFiles/CMakeScratch/TryCompile-QyYq72"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_COMPILER_TARGET: "wasm32-wasi"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_C_COMPILER_TARGET: "wasm32-wasi"
+      CMAKE_MODULE_PATH: "/opt/wasi-sdk/share/cmake"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/austynan/mhacks24/out/build/wasi/CMakeFiles/CMakeScratch/TryCompile-QyYq72'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_e1912
+        [1/2] /opt/wasi-sdk/share/cmake/../..//bin/clang++ --target=wasm32-wasi   -v -MD -MT CMakeFiles/cmTC_e1912.dir/CMakeCXXCompilerABI.cpp.obj -MF CMakeFiles/cmTC_e1912.dir/CMakeCXXCompilerABI.cpp.obj.d -o CMakeFiles/cmTC_e1912.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        clang version 18.1.2-wasi-sdk (https://github.com/llvm/llvm-project 26a1d6601d727a96f4301d0d8647b5a42760ae0c)
+        Target: wasm32-unknown-wasi
+        Thread model: posix
+        InstalledDir: /opt/wasi-sdk/share/cmake/../..//bin
+         (in-process)
+         "/opt/wasi-sdk/bin/clang-18" -cc1 -triple wasm32-unknown-wasi -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model static -mframe-pointer=none -ffp-contract=on -fno-rounding-math -mconstructor-aliases -target-cpu generic -fvisibility=hidden -debugger-tuning=gdb -fdebug-compilation-dir=/home/austynan/mhacks24/out/build/wasi/CMakeFiles/CMakeScratch/TryCompile-QyYq72 -v -fcoverage-compilation-dir=/home/austynan/mhacks24/out/build/wasi/CMakeFiles/CMakeScratch/TryCompile-QyYq72 -resource-dir /opt/wasi-sdk/lib/clang/18 -dependency-file CMakeFiles/cmTC_e1912.dir/CMakeCXXCompilerABI.cpp.obj.d -MT CMakeFiles/cmTC_e1912.dir/CMakeCXXCompilerABI.cpp.obj -sys-header-deps -isysroot /opt/wasi-sdk/bin/../share/wasi-sysroot -internal-isystem /opt/wasi-sdk/bin/../share/wasi-sysroot/include/wasm32-wasi/c++/v1 -internal-isystem /opt/wasi-sdk/bin/../share/wasi-sysroot/include/c++/v1 -internal-isystem /opt/wasi-sdk/lib/clang/18/include -internal-isystem /opt/wasi-sdk/bin/../share/wasi-sysroot/include/wasm32-wasi -internal-isystem /opt/wasi-sdk/bin/../share/wasi-sysroot/include -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -o CMakeFiles/cmTC_e1912.dir/CMakeCXXCompilerABI.cpp.obj -x c++ /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 18.1.2-wasi-sdk based upon LLVM 18.1.2-wasi-sdk default target wasm32-wasi
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /opt/wasi-sdk/bin/../share/wasi-sysroot/include/wasm32-wasi/c++/v1
+         /opt/wasi-sdk/bin/../share/wasi-sysroot/include/c++/v1
+         /opt/wasi-sdk/lib/clang/18/include
+         /opt/wasi-sdk/bin/../share/wasi-sysroot/include/wasm32-wasi
+         /opt/wasi-sdk/bin/../share/wasi-sysroot/include
+        End of search list.
+        [2/2] : && /opt/wasi-sdk/share/cmake/../..//bin/clang++ --target=wasm32-wasi  -v CMakeFiles/cmTC_e1912.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_e1912   && :
+        clang version 18.1.2-wasi-sdk (https://github.com/llvm/llvm-project 26a1d6601d727a96f4301d0d8647b5a42760ae0c)
+        Target: wasm32-unknown-wasi
+        Thread model: posix
+        InstalledDir: /opt/wasi-sdk/share/cmake/../..//bin
+         "/opt/wasi-sdk/share/cmake/../..//bin/wasm-ld" -m wasm32 -L/opt/wasi-sdk/bin/../share/wasi-sysroot/lib/wasm32-wasi /opt/wasi-sdk/bin/../share/wasi-sysroot/lib/wasm32-wasi/crt1-command.o CMakeFiles/cmTC_e1912.dir/CMakeCXXCompilerABI.cpp.obj -lc++ -lc++abi -lc /opt/wasi-sdk/lib/clang/18/lib/wasi/libclang_rt.builtins-wasm32.a -o cmTC_e1912
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/opt/wasi-sdk/bin/../share/wasi-sysroot/include/wasm32-wasi/c++/v1]
+          add: [/opt/wasi-sdk/bin/../share/wasi-sysroot/include/c++/v1]
+          add: [/opt/wasi-sdk/lib/clang/18/include]
+          add: [/opt/wasi-sdk/bin/../share/wasi-sysroot/include/wasm32-wasi]
+          add: [/opt/wasi-sdk/bin/../share/wasi-sysroot/include]
+        end of search list found
+        collapse include dir [/opt/wasi-sdk/bin/../share/wasi-sysroot/include/wasm32-wasi/c++/v1] ==> [/opt/wasi-sdk/share/wasi-sysroot/include/wasm32-wasi/c++/v1]
+        collapse include dir [/opt/wasi-sdk/bin/../share/wasi-sysroot/include/c++/v1] ==> [/opt/wasi-sdk/share/wasi-sysroot/include/c++/v1]
+        collapse include dir [/opt/wasi-sdk/lib/clang/18/include] ==> [/opt/wasi-sdk/lib/clang/18/include]
+        collapse include dir [/opt/wasi-sdk/bin/../share/wasi-sysroot/include/wasm32-wasi] ==> [/opt/wasi-sdk/share/wasi-sysroot/include/wasm32-wasi]
+        collapse include dir [/opt/wasi-sdk/bin/../share/wasi-sysroot/include] ==> [/opt/wasi-sdk/share/wasi-sysroot/include]
+        implicit include dirs: [/opt/wasi-sdk/share/wasi-sysroot/include/wasm32-wasi/c++/v1;/opt/wasi-sdk/share/wasi-sysroot/include/c++/v1;/opt/wasi-sdk/lib/clang/18/include;/opt/wasi-sdk/share/wasi-sysroot/include/wasm32-wasi;/opt/wasi-sdk/share/wasi-sysroot/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld\\.lld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/austynan/mhacks24/out/build/wasi/CMakeFiles/CMakeScratch/TryCompile-QyYq72']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/ninja -v cmTC_e1912]
+        ignore line: [[1/2] /opt/wasi-sdk/share/cmake/../..//bin/clang++ --target=wasm32-wasi   -v -MD -MT CMakeFiles/cmTC_e1912.dir/CMakeCXXCompilerABI.cpp.obj -MF CMakeFiles/cmTC_e1912.dir/CMakeCXXCompilerABI.cpp.obj.d -o CMakeFiles/cmTC_e1912.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang version 18.1.2-wasi-sdk (https://github.com/llvm/llvm-project 26a1d6601d727a96f4301d0d8647b5a42760ae0c)]
+        ignore line: [Target: wasm32-unknown-wasi]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /opt/wasi-sdk/share/cmake/../..//bin]
+        ignore line: [ (in-process)]
+        ignore line: [ "/opt/wasi-sdk/bin/clang-18" -cc1 -triple wasm32-unknown-wasi -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model static -mframe-pointer=none -ffp-contract=on -fno-rounding-math -mconstructor-aliases -target-cpu generic -fvisibility=hidden -debugger-tuning=gdb -fdebug-compilation-dir=/home/austynan/mhacks24/out/build/wasi/CMakeFiles/CMakeScratch/TryCompile-QyYq72 -v -fcoverage-compilation-dir=/home/austynan/mhacks24/out/build/wasi/CMakeFiles/CMakeScratch/TryCompile-QyYq72 -resource-dir /opt/wasi-sdk/lib/clang/18 -dependency-file CMakeFiles/cmTC_e1912.dir/CMakeCXXCompilerABI.cpp.obj.d -MT CMakeFiles/cmTC_e1912.dir/CMakeCXXCompilerABI.cpp.obj -sys-header-deps -isysroot /opt/wasi-sdk/bin/../share/wasi-sysroot -internal-isystem /opt/wasi-sdk/bin/../share/wasi-sysroot/include/wasm32-wasi/c++/v1 -internal-isystem /opt/wasi-sdk/bin/../share/wasi-sysroot/include/c++/v1 -internal-isystem /opt/wasi-sdk/lib/clang/18/include -internal-isystem /opt/wasi-sdk/bin/../share/wasi-sysroot/include/wasm32-wasi -internal-isystem /opt/wasi-sdk/bin/../share/wasi-sysroot/include -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -o CMakeFiles/cmTC_e1912.dir/CMakeCXXCompilerABI.cpp.obj -x c++ /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 18.1.2-wasi-sdk based upon LLVM 18.1.2-wasi-sdk default target wasm32-wasi]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /opt/wasi-sdk/bin/../share/wasi-sysroot/include/wasm32-wasi/c++/v1]
+        ignore line: [ /opt/wasi-sdk/bin/../share/wasi-sysroot/include/c++/v1]
+        ignore line: [ /opt/wasi-sdk/lib/clang/18/include]
+        ignore line: [ /opt/wasi-sdk/bin/../share/wasi-sysroot/include/wasm32-wasi]
+        ignore line: [ /opt/wasi-sdk/bin/../share/wasi-sysroot/include]
+        ignore line: [End of search list.]
+        ignore line: [[2/2] : && /opt/wasi-sdk/share/cmake/../..//bin/clang++ --target=wasm32-wasi  -v CMakeFiles/cmTC_e1912.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_e1912   && :]
+        ignore line: [clang version 18.1.2-wasi-sdk (https://github.com/llvm/llvm-project 26a1d6601d727a96f4301d0d8647b5a42760ae0c)]
+        ignore line: [Target: wasm32-unknown-wasi]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /opt/wasi-sdk/share/cmake/../..//bin]
+        link line: [ "/opt/wasi-sdk/share/cmake/../..//bin/wasm-ld" -m wasm32 -L/opt/wasi-sdk/bin/../share/wasi-sysroot/lib/wasm32-wasi /opt/wasi-sdk/bin/../share/wasi-sysroot/lib/wasm32-wasi/crt1-command.o CMakeFiles/cmTC_e1912.dir/CMakeCXXCompilerABI.cpp.obj -lc++ -lc++abi -lc /opt/wasi-sdk/lib/clang/18/lib/wasi/libclang_rt.builtins-wasm32.a -o cmTC_e1912]
+          arg [/opt/wasi-sdk/share/cmake/../..//bin/wasm-ld] ==> ignore
+          arg [-m] ==> ignore
+          arg [wasm32] ==> ignore
+          arg [-L/opt/wasi-sdk/bin/../share/wasi-sysroot/lib/wasm32-wasi] ==> dir [/opt/wasi-sdk/bin/../share/wasi-sysroot/lib/wasm32-wasi]
+          arg [/opt/wasi-sdk/bin/../share/wasi-sysroot/lib/wasm32-wasi/crt1-command.o] ==> obj [/opt/wasi-sdk/bin/../share/wasi-sysroot/lib/wasm32-wasi/crt1-command.o]
+          arg [CMakeFiles/cmTC_e1912.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+          arg [-lc++] ==> lib [c++]
+          arg [-lc++abi] ==> lib [c++abi]
+          arg [-lc] ==> lib [c]
+          arg [/opt/wasi-sdk/lib/clang/18/lib/wasi/libclang_rt.builtins-wasm32.a] ==> lib [/opt/wasi-sdk/lib/clang/18/lib/wasi/libclang_rt.builtins-wasm32.a]
+          arg [-o] ==> ignore
+          arg [cmTC_e1912] ==> ignore
+        remove lib [/opt/wasi-sdk/lib/clang/18/lib/wasi/libclang_rt.builtins-wasm32.a]
+        collapse obj [/opt/wasi-sdk/bin/../share/wasi-sysroot/lib/wasm32-wasi/crt1-command.o] ==> [/opt/wasi-sdk/share/wasi-sysroot/lib/wasm32-wasi/crt1-command.o]
+        collapse library dir [/opt/wasi-sdk/bin/../share/wasi-sysroot/lib/wasm32-wasi] ==> [/opt/wasi-sdk/share/wasi-sysroot/lib/wasm32-wasi]
+        implicit libs: [c++;c++abi;c]
+        implicit objs: [/opt/wasi-sdk/share/wasi-sysroot/lib/wasm32-wasi/crt1-command.o]
+        implicit dirs: [/opt/wasi-sdk/share/wasi-sysroot/lib/wasm32-wasi]
+        implicit fwks: []
+      
+      
+...

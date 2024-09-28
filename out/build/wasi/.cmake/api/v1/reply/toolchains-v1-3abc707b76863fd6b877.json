@@ -1,0 +1,93 @@
+{
+	"kind" : "toolchains",
+	"toolchains" : 
+	[
+		{
+			"compiler" : 
+			{
+				"id" : "Clang",
+				"implicit" : 
+				{
+					"includeDirectories" : 
+					[
+						"/opt/wasi-sdk/lib/clang/18/include",
+						"/opt/wasi-sdk/share/wasi-sysroot/include/wasm32-wasi",
+						"/opt/wasi-sdk/share/wasi-sysroot/include"
+					],
+					"linkDirectories" : 
+					[
+						"/opt/wasi-sdk/share/wasi-sysroot/lib/wasm32-wasi"
+					],
+					"linkFrameworkDirectories" : [],
+					"linkLibraries" : 
+					[
+						"c"
+					]
+				},
+				"path" : "/opt/wasi-sdk/share/cmake/../..//bin/clang",
+				"target" : "wasm32-wasi",
+				"version" : "18.1.2"
+			},
+			"language" : "C",
+			"sourceFileExtensions" : 
+			[
+				"c",
+				"m"
+			]
+		},
+		{
+			"compiler" : 
+			{
+				"id" : "Clang",
+				"implicit" : 
+				{
+					"includeDirectories" : 
+					[
+						"/opt/wasi-sdk/share/wasi-sysroot/include/wasm32-wasi/c++/v1",
+						"/opt/wasi-sdk/share/wasi-sysroot/include/c++/v1",
+						"/opt/wasi-sdk/lib/clang/18/include",
+						"/opt/wasi-sdk/share/wasi-sysroot/include/wasm32-wasi",
+						"/opt/wasi-sdk/share/wasi-sysroot/include"
+					],
+					"linkDirectories" : 
+					[
+						"/opt/wasi-sdk/share/wasi-sysroot/lib/wasm32-wasi"
+					],
+					"linkFrameworkDirectories" : [],
+					"linkLibraries" : 
+					[
+						"c++",
+						"c++abi",
+						"c"
+					]
+				},
+				"path" : "/opt/wasi-sdk/share/cmake/../..//bin/clang++",
+				"target" : "wasm32-wasi",
+				"version" : "18.1.2"
+			},
+			"language" : "CXX",
+			"sourceFileExtensions" : 
+			[
+				"C",
+				"M",
+				"c++",
+				"cc",
+				"cpp",
+				"cxx",
+				"mm",
+				"mpp",
+				"CPP",
+				"ixx",
+				"cppm",
+				"ccm",
+				"cxxm",
+				"c++m"
+			]
+		}
+	],
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 0
+	}
+}

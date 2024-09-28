@@ -1,0 +1,11 @@
+/home/austynan/mhacks24/out/build/wasi/CMakeFiles/sendir.wasm.dir
+/home/austynan/mhacks24/out/build/wasi/CMakeFiles/lockdoor.wasm.dir
+/home/austynan/mhacks24/out/build/wasi/CMakeFiles/unlockdoor.wasm.dir
+/home/austynan/mhacks24/out/build/wasi/CMakeFiles/lighton.wasm.dir
+/home/austynan/mhacks24/out/build/wasi/CMakeFiles/lightoff.wasm.dir
+/home/austynan/mhacks24/out/build/wasi/CMakeFiles/listen.wasm.dir
+/home/austynan/mhacks24/out/build/wasi/CMakeFiles/showcam.wasm.dir
+/home/austynan/mhacks24/out/build/wasi/CMakeFiles/opencal.wasm.dir
+/home/austynan/mhacks24/out/build/wasi/CMakeFiles/weather.wasm.dir
+/home/austynan/mhacks24/out/build/wasi/CMakeFiles/edit_cache.dir
+/home/austynan/mhacks24/out/build/wasi/CMakeFiles/rebuild_cache.dir
