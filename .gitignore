@@ -1,1 +1,5 @@
 *.env
+*.jpg
+*.wav
+*.pcm
+myenv/
