@@ -3,7 +3,7 @@
 #define MAX_LOOPS 20
 #define NUM_LEDS 7
 #define DELAY_MS 50
-#define LED_FADE_DURATION 0
+#define LED_FADE_DURATION 50
 
 //different color RGB values
 #define RED 0xFF0000
@@ -26,7 +26,7 @@
 
 int main()
 {
-    int color = YELLOW;
+    int color = LIGHT_BLUE;
 
     for (int i = 0; i < 7; i++) {
         setBoardLED(i, GET_RED(color), GET_GREEN(color), GET_BLUE(color), LED_FADE_DURATION, LEDManagerLEDMode::ledsimplevalue);
