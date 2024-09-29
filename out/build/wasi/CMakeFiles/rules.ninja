@@ -14,25 +14,6 @@
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__sendir.2ewasm_unscanned_Release
-  depfile = $DEP_FILE
-  deps = gcc
-  command = ${LAUNCHER}${CODE_CHECK}/opt/wasi-sdk/share/cmake/../..//bin/clang++ --target=wasm32-wasi $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
-  description = Building CXX object $out
-
-
-#############################################
-# Rule for linking CXX executable.
-
-rule CXX_EXECUTABLE_LINKER__sendir.2ewasm_Release
-  command = $PRE_LINK && /opt/wasi-sdk/share/cmake/../..//bin/clang++ --target=wasm32-wasi $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
-  description = Linking CXX executable $TARGET_FILE
-  restat = $RESTAT
-
-
-#############################################
-# Rule for compiling CXX files.
-
 rule CXX_COMPILER__lockdoor.2ewasm_unscanned_Release
   depfile = $DEP_FILE
   deps = gcc
@@ -177,6 +158,25 @@ rule CXX_COMPILER__weather.2ewasm_unscanned_Release
 # Rule for linking CXX executable.
 
 rule CXX_EXECUTABLE_LINKER__weather.2ewasm_Release
+  command = $PRE_LINK && /opt/wasi-sdk/share/cmake/../..//bin/clang++ --target=wasm32-wasi $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__removescript.2ewasm_unscanned_Release
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}/opt/wasi-sdk/share/cmake/../..//bin/clang++ --target=wasm32-wasi $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__removescript.2ewasm_Release
   command = $PRE_LINK && /opt/wasi-sdk/share/cmake/../..//bin/clang++ --target=wasm32-wasi $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT

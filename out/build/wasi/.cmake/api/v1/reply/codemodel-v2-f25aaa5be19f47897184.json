@@ -55,63 +55,63 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "lightoff.wasm::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-lightoff.wasm-Release-8b14949ae9ea49845b4f.json",
+					"jsonFile" : "target-lightoff.wasm-Release-0815543b894a1dac5f74.json",
 					"name" : "lightoff.wasm",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "lighton.wasm::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-lighton.wasm-Release-e917313db8d55eb6ef08.json",
+					"jsonFile" : "target-lighton.wasm-Release-50bd81f69c1733cdb8d1.json",
 					"name" : "lighton.wasm",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "listen.wasm::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-listen.wasm-Release-d2c2c9751c04cb0916b6.json",
+					"jsonFile" : "target-listen.wasm-Release-91060d9fce305b9b6561.json",
 					"name" : "listen.wasm",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "lockdoor.wasm::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-lockdoor.wasm-Release-e5a14c9d7c2b13a53d22.json",
+					"jsonFile" : "target-lockdoor.wasm-Release-736f2180ffca9d845863.json",
 					"name" : "lockdoor.wasm",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "opencal.wasm::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-opencal.wasm-Release-c0d63fade07b652fe105.json",
+					"jsonFile" : "target-opencal.wasm-Release-f4e3a59c3f6811f48ae8.json",
 					"name" : "opencal.wasm",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
-					"id" : "sendir.wasm::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-sendir.wasm-Release-e9aae50b6073e7fdfd1d.json",
-					"name" : "sendir.wasm",
+					"id" : "removescript.wasm::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-removescript.wasm-Release-6eefcba4547b95c2b9b3.json",
+					"name" : "removescript.wasm",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "showcam.wasm::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-showcam.wasm-Release-406a35981144b87ffa45.json",
+					"jsonFile" : "target-showcam.wasm-Release-9f64a1a8914ddcbc1599.json",
 					"name" : "showcam.wasm",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "unlockdoor.wasm::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-unlockdoor.wasm-Release-ec00b5ec8fbf0a403287.json",
+					"jsonFile" : "target-unlockdoor.wasm-Release-46ae7ad4d0c95c4abd47.json",
 					"name" : "unlockdoor.wasm",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "weather.wasm::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-weather.wasm-Release-d7d8067da86d6be48beb.json",
+					"jsonFile" : "target-weather.wasm-Release-51429a756f8c7cd9ec67.json",
 					"name" : "weather.wasm",
 					"projectIndex" : 0
 				}

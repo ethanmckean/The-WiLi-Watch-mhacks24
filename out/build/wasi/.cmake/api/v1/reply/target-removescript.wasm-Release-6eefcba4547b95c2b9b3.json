@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "listen.wasm"
+			"path" : "removescript.wasm"
 		}
 	],
 	"backtrace" : 1,
@@ -24,7 +24,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 11,
+				"line" : 14,
 				"parent" : 0
 			}
 		]
@@ -45,7 +45,7 @@
 			]
 		}
 	],
-	"id" : "listen.wasm::@6890427a1f51a3e7e1df",
+	"id" : "removescript.wasm::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -61,8 +61,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "listen.wasm",
-	"nameOnDisk" : "listen.wasm",
+	"name" : "removescript.wasm",
+	"nameOnDisk" : "removescript.wasm",
 	"paths" : 
 	{
 		"build" : ".",
@@ -83,7 +83,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "listen.cpp",
+			"path" : "removescript.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

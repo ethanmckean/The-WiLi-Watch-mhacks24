@@ -41,38 +41,6 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = /home/austynan/mhacks24/out/build/wasi/
 # =============================================================================
-# Object build statements for EXECUTABLE target sendir.wasm
-
-
-#############################################
-# Order-only phony target for sendir.wasm
-
-build cmake_object_order_depends_target_sendir.wasm: phony || CMakeFiles/sendir.wasm.dir
-
-build CMakeFiles/sendir.wasm.dir/sendir.cpp.obj: CXX_COMPILER__sendir.2ewasm_unscanned_Release /home/austynan/mhacks24/sendir.cpp || cmake_object_order_depends_target_sendir.wasm
-  DEP_FILE = CMakeFiles/sendir.wasm.dir/sendir.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG
-  OBJECT_DIR = CMakeFiles/sendir.wasm.dir
-  OBJECT_FILE_DIR = CMakeFiles/sendir.wasm.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target sendir.wasm
-
-
-#############################################
-# Link the executable sendir.wasm
-
-build sendir.wasm: CXX_EXECUTABLE_LINKER__sendir.2ewasm_Release CMakeFiles/sendir.wasm.dir/sendir.cpp.obj
-  FLAGS = -O3 -DNDEBUG
-  LINK_FLAGS = -s
-  OBJECT_DIR = CMakeFiles/sendir.wasm.dir
-  POST_BUILD = :
-  PRE_LINK = :
-  TARGET_FILE = sendir.wasm
-  TARGET_PDB = sendir.wasm.dbg
-
-# =============================================================================
 # Object build statements for EXECUTABLE target lockdoor.wasm
 
 
@@ -328,6 +296,38 @@ build weather.wasm: CXX_EXECUTABLE_LINKER__weather.2ewasm_Release CMakeFiles/wea
   TARGET_FILE = weather.wasm
   TARGET_PDB = weather.wasm.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target removescript.wasm
+
+
+#############################################
+# Order-only phony target for removescript.wasm
+
+build cmake_object_order_depends_target_removescript.wasm: phony || CMakeFiles/removescript.wasm.dir
+
+build CMakeFiles/removescript.wasm.dir/removescript.cpp.obj: CXX_COMPILER__removescript.2ewasm_unscanned_Release /home/austynan/mhacks24/removescript.cpp || cmake_object_order_depends_target_removescript.wasm
+  DEP_FILE = CMakeFiles/removescript.wasm.dir/removescript.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG
+  OBJECT_DIR = CMakeFiles/removescript.wasm.dir
+  OBJECT_FILE_DIR = CMakeFiles/removescript.wasm.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target removescript.wasm
+
+
+#############################################
+# Link the executable removescript.wasm
+
+build removescript.wasm: CXX_EXECUTABLE_LINKER__removescript.2ewasm_Release CMakeFiles/removescript.wasm.dir/removescript.cpp.obj
+  FLAGS = -O3 -DNDEBUG
+  LINK_FLAGS = -s
+  OBJECT_DIR = CMakeFiles/removescript.wasm.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = removescript.wasm
+  TARGET_PDB = removescript.wasm.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -362,7 +362,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/austynan/mhacks24/out/build/wasi
 
-build all: phony sendir.wasm lockdoor.wasm unlockdoor.wasm lighton.wasm lightoff.wasm listen.wasm showcam.wasm opencal.wasm weather.wasm
+build all: phony lockdoor.wasm unlockdoor.wasm lighton.wasm lightoff.wasm listen.wasm showcam.wasm opencal.wasm weather.wasm removescript.wasm
 
 # =============================================================================
 # Unknown Build Time Dependencies.

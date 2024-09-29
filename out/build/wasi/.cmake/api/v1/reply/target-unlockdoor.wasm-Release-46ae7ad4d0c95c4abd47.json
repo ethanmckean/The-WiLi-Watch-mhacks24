@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "lightoff.wasm"
+			"path" : "unlockdoor.wasm"
 		}
 	],
 	"backtrace" : 1,
@@ -24,7 +24,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 10,
+				"line" : 7,
 				"parent" : 0
 			}
 		]
@@ -45,7 +45,7 @@
 			]
 		}
 	],
-	"id" : "lightoff.wasm::@6890427a1f51a3e7e1df",
+	"id" : "unlockdoor.wasm::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -61,8 +61,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "lightoff.wasm",
-	"nameOnDisk" : "lightoff.wasm",
+	"name" : "unlockdoor.wasm",
+	"nameOnDisk" : "unlockdoor.wasm",
 	"paths" : 
 	{
 		"build" : ".",
@@ -83,7 +83,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "lightoff.cpp",
+			"path" : "unlockdoor.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],
