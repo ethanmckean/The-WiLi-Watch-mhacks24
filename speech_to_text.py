@@ -5,6 +5,7 @@ from groq import Groq
 import numpy as np
 from dotenv import load_dotenv
 import base64
+import serial
 # import imageio
 from PIL import Image
 
@@ -236,9 +237,27 @@ def listen_for_request():
         # open_camera()
         speech(front_door_analysis.choices[0].message.content)
     elif message_type == "[lock_door]":
-        print("hi")#
+        # Configure the serial connection
+        port = '/dev/ttyACM0'  # Change this to your port
+        baudrate = 9600        # Match the baud rate of your device
+        ser = serial.Serial(port, baudrate, timeout=1)
+        print(f'Connected to {port} at {baudrate} baud rate.')
+        value_to_send = 'lock'
+        ser.write(value_to_send.encode())
+        print(f'Sent: {value_to_send}')
+        speech("Locking the door.")
+
     elif message_type == "[unlock_door]":
-        print("hi")#
+        # Configure the serial connection
+        port = '/dev/ttyACM0'  # Change this to your port
+        baudrate = 9600        # Match the baud rate of your device
+        ser = serial.Serial(port, baudrate, timeout=1)
+        print(f'Connected to {port} at {baudrate} baud rate.')
+        value_to_send = 'unlock'
+        ser.write(value_to_send.encode())
+        print(f'Sent: {value_to_send}')
+        speech("Unlocking the door.")
+
     elif message_type == "[calendar]":
         url = 'https://calendar.google.com/calendar/u/0/r'
         webbrowser.open(url)

@@ -110,11 +110,8 @@ void loop() {
      * address is in command is in IrReceiver.decodedIRData.address
      * and up to 32 bit raw data in IrReceiver.decodedIRData.decodedRawData
      */
-    uint16_t address;
-    unsigned current_time;
-
-    String input = Serial.readString();
-
+     uint16_t address;
+      unsigned current_time;
     if (IrReceiver.decode()) {
 
         /*
@@ -141,7 +138,7 @@ void loop() {
     // decode instruction
 
 
-    if (address == 2 || input == "unlock") { // unlock
+    if (address == 2) { // unlock
       while (millis() - current_time < 1100) {
       // Rotate the Motor A clockwise
 digitalWrite(IN1, HIGH);
@@ -153,7 +150,7 @@ digitalWrite(IN2, HIGH);
 delay(80);
       }
       address = 0;
-    } else if (address == 1 || input == "lock") { // lock
+    } else if (address == 1) { // lock
       while (millis() - current_time < 1100) {
       // Rotates the Motor A counter-clockwise
 digitalWrite(IN1, LOW);

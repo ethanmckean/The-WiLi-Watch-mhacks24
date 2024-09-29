@@ -111,6 +111,7 @@ def main():
                         print(val)
                         print("\n")
                         tscript = ""
+                        requesting=False
                         camera=False
                         if val == "4":
                             print("4\n\n\n")
