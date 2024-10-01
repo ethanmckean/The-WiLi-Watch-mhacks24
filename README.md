@@ -1,4 +1,10 @@
-# errors:
+# Project for MHacsk 24
+See the devpost [here](https://devpost.com/software/wili-watch)
+
+## errors
+Mostly a note during development. We ran into issues with opening weather/gcal. This fixed that issue.
+
+```
 Traceback (most recent call last):
   File "/home/orangepi/mhacks24/main_file.py", line 11, in <module>
     import pyautogui
@@ -15,5 +21,7 @@ Traceback (most recent call last):
   File "/home/orangepi/mhacks24/myenv/lib/python3.12/site-packages/Xlib/protocol/display.py", line 129, in __init__
     raise error.DisplayConnectionError(self.display_name, r.reason)
 Xlib.error.DisplayConnectionError: Can't connect to display ":0": b'Authorization required, but no authorization protocol specified\n'
+```
 
-run: xhost +local:
+Fix:
+`xhost +local:`
