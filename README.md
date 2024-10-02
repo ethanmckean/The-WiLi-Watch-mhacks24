@@ -1,5 +1,6 @@
-# Project for MHacsk 24
+# Project for MHacks 24
 See the devpost [here](https://devpost.com/software/wili-watch)
+Project is pending a rewrite - code was written in a weekend with 3 hours of sleep shared among the team (:
 
 ## errors
 Mostly a note during development. We ran into issues with opening weather/gcal. This fixed that issue.
